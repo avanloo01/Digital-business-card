@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/index.css" type="text/css">
+    
+    <!-- Favicon stuff -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5882C5">
+    <meta name="apple-mobile-web-app-title" content="AVL's business card">
+    <meta name="application-name" content="AVL's business card">
+    <meta name="msapplication-TileColor" content="#5882c5">
+    <meta name="theme-color" content="#5882c5">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <title>AVL's business card</title>
+</head>
+<body>
+    <div class="mainContent">
+        <div id="Profile"></div>
+        <h1 id="username">Arthur Van Loo</h1>
+        <h2 id="userInfo">IBA student at Rotterdam School of Management</h2>
+        <div class="icons">
+
+            <div class="iconGroup">
+
+                <a href="tel:+32 488 21 09 75" class="contactInfo">                    
+                    <img src="Assets/icon-phone.png" class="contactIcon"/>
+                    +32 488 21 09 75
+                </a>
+                <a href="mailto:arthur@vanloo.biz" class="contactInfo">
+                    <img src="Assets/icon-email.png" class="contactIcon"/>
+                    arthur@vanloo.biz
+                </a>
+
+            </div>
+
+            <div class="iconGroup dropdown">
+
+                <button class="moreButton contactInfo">
+                    <img src="Assets/icon-more.png" class="contactIcon"/>
+                    More
+                </button>
+
+                <div class="moreInfo" class="contactInfo">
+
+                    <a href="https://www.linkedin.com/in/arthur-van-loo/" class="contactInfo">
+                        <img src="Assets/logo-linkedin.png" class="contactIcon"/>Arthur Van Loo
+                    </a>
+                    <a href="https://github.com/avanloo01" class="contactInfo">
+                        <img src="Assets/logo-github.png" class="contactIcon"/>avanloo01
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="iconGroup resume">
+
+                <a href="Assets/CV.pdf" class="contactInfo">
+                    <img src="Assets/icon-cv.png" class="contactIcon"/>Resume
+                </a>
+
+            </div>
+
+        </div>
+        <form action="/save-contact" method="get">
+            <button id="saveButton">Save contact</button>
+        </form>
+    </div>
+</body>
+</html>
