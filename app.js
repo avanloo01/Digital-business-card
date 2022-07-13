@@ -22,7 +22,7 @@ app.get('/save-contact',function(req,res) {
     });
 });
 
-app.listen(PORT, (err) => {
+app.listen(process.env.PORT || PORT, (err) => {
     if(!err){
         console.log("Server running; listening on port " + PORT);
     }
